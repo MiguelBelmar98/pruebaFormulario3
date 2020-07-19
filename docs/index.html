@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <link rel="icon" href="https://i.pinimg.com/originals/eb/cd/62/ebcd6293a58d6c4550c929510ee05f23.png">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Formulario</title>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body onload="cambiar()" class="container">
+    <!-- 
+        <form action="registro.html">
+            <div class="register">
+                <h1 class="title">Registrarse!</h1>
+                <input class="input-div name" type="text" name="nombres" placeholder="Nombres" required>
+                <input class="input-div last name" type="text" name="apellidos" placeholder="Apellidos" required><br>
+                <input class="input-div email" type="email" name="email" placeholder="Correo" required>
+                <input class="input-div andress" type="text" name="direccion" placeholder="Dirección" required><br>
+                <input class="input-div password" type="password" name="password" placeholder="Contraseña" required>
+                <input class="input-div pasword_1" type="password" name="password_1" placeholder="Confirmar Contraseña" required><br>
+                <input class="input-div cellphone" type="number" name="celular" placeholder="Celular" required>
+                <input class="input-div phone" type="number" name="telefono" placeholder="Telefono" required>
+            </div>
+            <label class="mensaje">¿Ya tienes cuenta? <a href="index.html">Iniciar Sesion</a></label>
+            <div class="div">
+                <button class="btn" type="submit" name="btnRegistrar">Registrarse</button>
+            </div>
+        </form>
+        -->
+    <img class="wave" src="../img/wave.png">
+    <div class="container register">
+        <div class="img">
+            <img id="imagenEjercicio">
+        </div>
+        <div class="login-content-register1">
+            <form action=" ">
+                <h2 class="title">Antropometria</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Peso inicial (kg)</h5>
+                        <input id="pesoInicial" type="text" class="input" onchange="calcularIMC()">
+                    </div>
+                </div>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-ruler-horizontal"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Talla (m)</h5>
+                        <input id="talla" type="text" class="input" onchange="calcularIMC()">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Peso Max (kg)</h5>
+                        <input id="pesoMaximo" type="text" class="input" >
+                    </div>   
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="div">
+                        <h5>IMC inicial</h5>
+                        <input id="imcInicial" type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Estado Nutricional</h5>
+                        <input id="estadoNutricional" type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Factor Energía</h5>
+                        <input id="factorEnergia" type="number" class="input" min="1" max="4">
+                    </div>
+                </div>                
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Composicion Corporal</h5>
+                        <input id="composicionCorporal" type="text" class="input">
+                    </div>
+                </div>                
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-tape"></i>
+                    </div>
+                    <div class="div">
+                        <h5>C. Cintura (cm)</h5>
+                        <input id="cinturaC" type="text" class="input">
+                    </div>
+                </div>
+                <!-- <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Telefono</h5>
+                        <input name="telefono" type="text" class="input">
+                    </div>
+                </div> -->
+                <button class="btn btn-verde" type="button" name="btnRegistrar"> Guardar </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
